@@ -18,7 +18,8 @@ namespace what3words_resolver_server.Api
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-                .AddJsonFile($"applicationInsites.{env.EnvironmentName}.json", optional: true);
+                .AddJsonFile($"applicationInsites.{env.EnvironmentName}.json", optional: true)
+                .AddJsonFile($"w3wconfiguration.{env.EnvironmentName}.json", optional: true);
 
             if (env.IsEnvironment("Development"))
             {
@@ -38,6 +39,8 @@ namespace what3words_resolver_server.Api
         {
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
+
+            services.AddSingleton<IConfiguration>(sp => { return Configuration; });
 
             services.AddMvc();
         }

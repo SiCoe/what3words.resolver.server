@@ -3,6 +3,8 @@
 # applicationInsites key
 applicationInsites.*.json
 
+# w3w API key etc.
+w3wconfiguration.*.json
 
 
 ### Visual Studio
