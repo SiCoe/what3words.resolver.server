@@ -1,0 +1,1 @@
+# what3words.resolver.server
