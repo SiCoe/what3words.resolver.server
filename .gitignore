@@ -6,6 +6,8 @@ applicationInsites.*.json
 # w3w API key etc.
 w3wconfiguration.*.json
 
+**/Properties/PublishProfiles/*
+
 
 ### Visual Studio
 # https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
