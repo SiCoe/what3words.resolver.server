@@ -1,5 +1,9 @@
 # what3words.resolver.server
 
+## Usage
+
+This is a RESTful API that is similar to 
+
 ## Development
 
 ### Setup
@@ -11,7 +15,7 @@ Where `<EnvironmentName>` is your current `env.EnvironmentName` (see Startup.cs)
 
 This file should contain the following:
 
-```json`
+```json
 {
   "What3Words": {
     "w3wApiKey": "<YOUR API KEY>"
